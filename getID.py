@@ -10,5 +10,6 @@ for i in startFile:
         print(pics)
         for ii in pics:
             with open("img.txt",'a',encoding='utf-8') as f:
-                f.write(ii)
+                strs  = 'https://raw.githubusercontent.com/BZBY/PicApi/main/'+i+r"/"+ii
+                f.write(strs)
                 f.write("\n")
